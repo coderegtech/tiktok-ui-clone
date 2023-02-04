@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(47, 47, 47, 0.562);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.sidemenu:hover::-webkit-scrollbar {
+  width: 5px;
+  transition: 0.3s;
+}
+
+.sidemenu {
+  height: calc(100vh - 60px);
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 2rem;
+  background-color: #252525;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+}
+
+.darkmode-btn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0, 2px);
+  border-radius: 50%;
+}
